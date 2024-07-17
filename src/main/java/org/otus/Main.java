@@ -1,4 +1,6 @@
-package org.example;
+package org.otus;
+
+import java.util.Arrays;
 
 /**
  * @author Sergei on 16.07.2024 17:00.
@@ -9,6 +11,7 @@ public class Main {
 
         System.out.println("----------------Домашнее задание #30-----------------");
         int[] arr = {1, 2, 1, 2, 2};
+        System.out.println(Arrays.toString(arr));
         printArr(arr);
         printArr(searchFirstOne(arr));
         System.out.println();
