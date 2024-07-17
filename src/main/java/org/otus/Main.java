@@ -58,11 +58,7 @@ public class Main {
 
         for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] == 1) {
-                int[] newArr = new int[arr.length - i - 1];
-                for (int j = i + 1; j < arr.length; j++) {
-                    newArr[arr.length - j - 1] = arr[j];
-                }
-                return newArr;
+                return Arrays.copyOfRange(arr, i + 1, arr.length);
             }
         }
         throw new RuntimeException("Единиц не найдено");
